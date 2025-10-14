@@ -31,7 +31,7 @@ const portfolioItems = [
   },
   {
     id: 3,
-    src: "/koki_3.jpg",
+    src: "/KOKI_3.jpg",
     alt: "Ethiopian traditional design",
     title: "Traditional Wear",
     description: "",
@@ -133,6 +133,10 @@ export default function HomePage() {
                         className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                        onError={(e) => {
+                          console.error('Image failed to load:', item.src);
+                          e.currentTarget.src = '/placeholder.svg';
+                        }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="absolute bottom-4 left-4 right-4 text-white">
