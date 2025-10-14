@@ -8,7 +8,7 @@ import "./globals.css"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Koket Habesha Dress | Traditional & Modern Fashion",
+  title: "Koket Habesha Dress",
   description:
     "Showcasing unique Ethiopian fashion designs blending traditional craftsmanship with contemporary style. Explore our collection of casual wear, traditional clothes, and accessories.",
   keywords: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Koket Habesha Dress | Traditional & Modern Fashion",
+    title: "Koket Habesha Dress",
     description: "Unique Ethiopian fashion designs blending tradition with modernity",
     url: "https://ethiopiandesigner.com",
     siteName: "Koket Habesha Dress",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Koket Habesha Dress | Traditional & Modern Fashion",
+    title: "Koket Habesha Dress",
     description: "Unique Ethiopian fashion designs blending tradition with modernity",
     images: ["/ethiopian-traditional-dress-with-modern-twist.jpg"],
   },

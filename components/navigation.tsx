@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -20,10 +21,22 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-semibold text-foreground">
-              KOKI Design
-            </span>
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative">
+              <Image
+                src="/logo.jpg"
+                alt="Koket Habesha Dress Logo"
+                width={50}
+                height={50}
+                className="rounded-full object-cover border-2 border-black shadow-lg filter brightness-50 contrast-150 grayscale"
+                priority
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-black dark:text-white">
+                Koket Habesha Dress
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

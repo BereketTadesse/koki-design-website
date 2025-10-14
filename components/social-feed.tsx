@@ -26,7 +26,7 @@ const socialPosts = [
     id: 3,
     platform: "instagram",
     image: "/koki_3.jpg",
-    caption: "Casual Friday vibes with Ethiopian flair ✨",
+    caption: "Ethiopian flair with contemporary style ✨",
     likes: 421,
     date: "1 week ago",
   },
