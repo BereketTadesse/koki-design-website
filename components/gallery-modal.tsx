@@ -1,6 +1,6 @@
 "use client"
 
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 import Image from "next/image"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -23,6 +23,9 @@ export function GalleryModal({ isOpen, onClose, image }: GalleryModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-6xl p-0 overflow-hidden rounded-2xl">
+        <DialogTitle className="sr-only">
+          {image.title} - {image.category}
+        </DialogTitle>
         <Button
           variant="ghost"
           size="icon"
